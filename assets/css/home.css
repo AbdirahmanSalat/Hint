@@ -10,7 +10,7 @@ body{
   background: url(../img/bg.png)no-repeat;
   background-size: cover;
   color: white;
-  height:fit-content;
+  height:100vh;
 }
 nav{
   position: fixed;
@@ -465,8 +465,8 @@ nav.sticky{
 }
 
 main{
-  position: relative;
-  top: 300px;
+  position: absolute;
+  top:50%;
   justify-content: left;
   text-align: left;
   margin-left:1em;
