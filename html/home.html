@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../assets/img/Favcon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../assets/css/home.css">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <title>Hint</title>
+</head>
+<body onload="myFunction()" style="margin:0;">    
+<div id="loader">
+  <div class="shadow">
+    <div class="loader">
+      <div class="item top"></div>
+      <div class="item left"></div>
+      <div class="item right"></div>
+      <div class="item bottom"></div>
+    </div>
+  </div>
+</div>
+    <div style="display:none;" id="myDiv" class="animate-bottom">
+
+    <nav>
+        <div class="navbar">
+          <i class='bx bx-menu'></i>
+          <div class="logo"><a href="home.html"><img draggable="false" src="../assets/img/logo.png" width="130px" height="90px" ></a></div>
+          <div class="nav-links">
+            <div class="sidebar-logo">
+              <span class="logo-name"><img draggable="false" src="../img/logo.png" width="130px" height="90px" ></a></span>
+              <i class='bx bx-x' ></i>
+            </div>
+            <ul class="links">
+              <li><a href="#">HOME</a></li>
+              <li>
+                <a href="#">HTML & CSS</a>
+                <i class='bx bxs-chevron-down htmlcss-arrow arrow  '></i>
+                <ul class="htmlCss-sub-menu sub-menu">
+                  <li><a href="#">Responsive Nav Bars</a></li>
+                  <li><a href="#">Login Forms</a></li>
+                  <li><a href="#">Side Bars</a></li>
+                  <li><a href="#">Website Designs</a></li>
+                  <li class="more">
+                    <span><a href="#">More</a>
+                    <i class='bx bxs-chevron-right arrow more-arrow'></i>
+                  </span>
+                    <ul class="more-sub-menu sub-menu">
+                      <li><a href="#">Css Buttons</a></li>
+                      <li><a href="#">Pre-Loders</a></li>
+                      <li><a href="#">Css Effects</a></li>
+                      <li><a href="#">3D Designs</a></li>
+                      <li><a href="#">Social Media Buttons</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">JAVASCRIPT</a>
+                <i class='bx bxs-chevron-down js-arrow arrow '></i>
+                <ul class="js-sub-menu sub-menu">
+                  <li><a href="#">Clocks</a></li>
+                  <li><a href="#">Validation Forms</a></li>
+                  <li><a href="#">Sliders</a></li>
+                  <li><a href="#">Complete Website</a></li>
+                </ul>
+              </li>
+              <li><a href="#">CONTACT</a></li>
+              <div class="btns">
+                <button class="login" onclick="location='login.html'">Login</button>
+                <button class="sign" onclick="location='reg.html'">Sign In</button>
+              </div>
+            </ul>
+
+          </div>
+          <div class="search-box">
+            <i class='bx bx-search'></i>
+            <div class="input-box">
+              <input type="text" placeholder="Search...">
+            </div>
+          </div>
+        </div>
+      </nav>
+      <main>
+        <div class="Nloged">
+        <h1>Cool hints in code just for you</h1>
+        <h1>
+          <p>Get all the help you need from one page</p>
+          <button class="gbtn">Get Started</button>
+        </h1>
+      </div>
+      </main>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase.js"></script>
+    <script>
+      const firebaseConfig = {
+        apiKey: "AIzaSyCenp1RSKhbgS_eL_uBjxJj1ETKWs52Mh8",
+        authDomain: "loginform-45820.firebaseapp.com",
+        projectId: "loginform-45820",
+        storageBucket: "loginform-45820.appspot.com",
+        messagingSenderId: "365142712779",
+        appId: "1:365142712779:web:f9e834e0499f8aab94d64e",
+        measurementId: "G-94ZQPCMPVB"
+    
+      };
+    
+    
+      // Initialize Firebase
+       firebase.initializeApp(firebaseConfig);
+    </script>
+      <script src="../js/home.js"></script>   
+</body>
+</html>
