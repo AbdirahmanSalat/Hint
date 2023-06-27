@@ -1,55 +1,65 @@
-
 <!DOCTYPE html>
+<!-- Coding By CodingNepal - codingnepalweb.com -->
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title><link rel="stylesheet" href="../css/login.css">
-    <link rel="shortcut icon" href="../img/Favcon.png" type="image/x-icon">
-</head>
-<body>
-    <link rel="shortcut icon" href="../img/Favcon.png" type="image/x-icon">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login To your account</title>
+
+    <link rel="stylesheet" href="../assets/css/login.css" />
+
+    <!-- Boxicons CSS -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <div class="container">
-        <div class="item-container">
-            <h2 class="log-in">Log in</h2>
+      <header style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
+        <a href="home.html"><img src="../assets/img/logo.png" width="100px" style="cursor: pointer;"></a>
+        Welcome back
+    </header>
+      <form action="home.html">
+        <div class="field email-field">
+          <div class="input-field">
+            <input type="email" placeholder="Enter your email" class="email" />
+          </div>
+          <span class="error email-error">
+            <i class="bx bx-error-circle error-icon"></i>
+            <p class="error-text">Please enter a valid email</p>
+          </span>
         </div>
-        <div class="item-container">
-            <button style="cursor: pointer;">
-                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
-                aria-hidden="true" role="img" width="40" height="40" 
-                preserveAspectRatio="xMidYMid meet" 
-                viewBox="0 0 24 24"><path fill="#1e293b" d="M21.456 10.154c.123.659.19 1.348.19 2.067c0 5.624-3.764 9.623-9.449 9.623A9.841 9.841 0 0 1 2.353 12a9.841 9.841 0 0 1 9.844-9.844c2.658 0 4.879.978 6.583 2.566l-2.775 2.775V7.49c-1.033-.984-2.344-1.489-3.808-1.489c-3.248 0-5.888 2.744-5.888 5.993c0 3.248 2.64 5.998 5.888 5.998c2.947 0 4.953-1.685 5.365-3.999h-5.365v-3.839h9.26Z"/></svg>
-            </button>
+        <div class="field create-password">
+          <div class="input-field">
+            <input
+              type="password"
+              placeholder="Create password"
+              class="password"
+            />
+            <i class="bx bx-hide show-hide"></i>
+          </div>
+          <span class="error password-error">
+            <i class="bx bx-error-circle error-icon"></i>
+            <p class="error-text">
+              Please enter atleast 8 charatcer with number, symbol, small and
+              capital letter.
+            </p>
+          </span>
         </div>
-        <div class="item-container">
-            <p>or login using email</p>
+            <a href="forgot.html">Forgot Password?</a>
+        <div class="input-field button">
+          <input type="submit" value="Submit Now" />
         </div>
-        <form>
-            <div class="form-input">
-                <label for="email" class="label">Email</label>
-                <input type="text" >
-            </div>
-            <div class="form-input">
-                <label for="password" class="label">Password</label>
-                <input type="password" >
-            </div>
-            <div class="display-space-between">
-                <div>
-                    <input type="checkbox" checked>
-                    <label for="password" class="chekbox-label">Remember Me</label>
-                </div>
-                <div>
-                    <a href="#">Forget password</a>
-                </div>
-            </div>
-            <div>
-                <button type="submit">Log in</button>
-            </div>
-        </form>
-        <div class="display-space-between">
-            <span>Don't have an account?</span>
+        <div class="input-field" style="display: flex; gap: 10px;">
+            <p>Don't have an account?</p>
             <a href="reg.html">Register</a>
-        </div>
+          </div>  
+      </form>
     </div>
-</body>
+
+    <!-- JavaScript -->
+   <script src="../js/reg.js"></script>
+  </body>
 </html>

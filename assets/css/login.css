@@ -37,6 +37,17 @@ form .input-field {
   position: relative;
   height: 55px;
   width: 100%;
+}.input-field input[type="checkbox"]{
+height: 18px;
+width: 18px;
+margin-left: 5px;
+margin-right: 5px;
+
+}
+.checkF{
+  margin: 0;
+  padding:0;
+  height:5px;
 }
 .input-field input {
   height: 100%;
